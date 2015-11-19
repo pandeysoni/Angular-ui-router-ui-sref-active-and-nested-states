@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.28/angular.js" data-semver="1.2.28"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+  <p>Hello {{name}}!</p>
+  <li class="top" ui-sref-active="heaader_active"><a ui-sref="home"><i class="fa fa-cloud-upload"></i>
+									&nbsp;Home</a></li>
+  <li class="top" ui-sref-active="heaader_active"><a ui-sref="contact"><i class="fa fa-cloud-upload"></i>
+									&nbsp;Contact</a></li>
+  <li class="top" ui-sref-active="heaader_active"><a ui-sref="about"><i class="fa fa-cloud-upload"></i>
+									&nbsp;About</a></li>
+  <div ui-view></div>
+</body>
+
+</html>
